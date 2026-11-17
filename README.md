@@ -6,14 +6,15 @@ Implementación desde cero de una lista doblemente enlazada, con manejo manual d
 
 | Función | Complejidad | Descripción |
 |---|---|---|
-| `insert(Node **top, int value)` | O(1) | Inserta al inicio |
-| `print(Node *top)` | O(n) | Recorre e imprime |
-| `pop(Node **top)` | O(1) | Elimina el primero |
-| `delete_last(Node **top)` | O(n) | Elimina el último |
-| `delete(Node **top, int value)` | O(n) | Elimina por valor |
-| `search(Node *top, int value)` | O(n) | Devuelve el nodo o `NULL` |
-| `update(Node *top, int old, int new)` | O(n) | Cambia un valor |
-| `free_list(Node **top)` | O(n) | Libera todos los nodos |
+| `insert_head(D_List *list, int value)` | O(1) | Inserta al inicio |
+| `insert_tail(D_List *list, int value)` | O(1) | Inserta al final |
+| `print(D_List list)` | O(n) | Recorre e imprime la lista con su Head, Tail y Size |
+| `pop(D_List *list)` | O(1) | Elimina el primer elemento |
+| `delete_last(D_List *list)` | O(1) | Elimina el último elemento |
+| `delete(D_List *list, int value)` | O(n) | Elimina por valor |
+| `search(D_List list, int value)` | O(n) | Devuelve el nodo o `NULL` |
+| `update(D_List list, int old, int new)` | O(n) | Cambia un valor |
+| `free_list(D_List *list)` | O(n) | Libera todos los nodos y vacía la Lista |
 
 ## Compilar y ejecutar
 
